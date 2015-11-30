@@ -3,7 +3,7 @@ import datetime
 import time
 
 
-while true:
+while True:
   #get current cpu percentage
   currentcpu = psutil.cpu_percent(interval=1)
   #get current time
