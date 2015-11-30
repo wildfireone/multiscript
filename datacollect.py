@@ -14,8 +14,8 @@ while True:
   conn = sqlite3.connect('testdata.db')
   print "Opened database successfully"
 
-  #add the values into the database
-  conn.execute("INSERT INTO CPU (TIME,CPUUSE) VALUES ('"+time+"','"+currentcpu+"')")
+  #add the values into the database, use str() to turn the values into strings
+  conn.execute("INSERT INTO CPU (TIME,CPUUSE) VALUES ('"+str(time)+"','"+str(currentcpu)+"')")
 
   conn.commit()
   print "Records created successfully";
