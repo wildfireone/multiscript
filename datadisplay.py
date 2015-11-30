@@ -21,7 +21,7 @@ while True:
     
     cputable = HTML.Table(header_row=['TIME', 'CPUUSE'])
     #open database
-    conn = sqlite3.connect('testata.db')
+    conn = sqlite3.connect('testdata.db')
     #get data from database
     cursor = conn.execute("SELECT TIME, CPUUSE FROM CPU")
     for row in cursor:
