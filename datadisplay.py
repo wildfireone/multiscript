@@ -32,6 +32,10 @@ while True:
     http_body = """
 	  <!doctype html>
 	  <html>
+	  <head>
+	  	<title> my server data </title>
+	  	<meta http-equiv="refresh" content="5" >
+	  </head>
 	  <body> 
 	    """ + str(cputable) + """
 	  </body>
