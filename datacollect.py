@@ -17,9 +17,13 @@ while True:
   #add the values into the database, use str() to turn the values into strings
   conn.execute("INSERT INTO CPU (TIME,CPUUSE) VALUES ('"+str(currenttime)+"','"+str(currentcpu)+"')")
 
+  #commit the data to the databse
   conn.commit()
   print "Records created successfully";
+  
+  #close the connection
   conn.close()
+  #wait ten seconds
   time.sleep(10)
 
 
